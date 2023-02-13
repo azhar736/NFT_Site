@@ -1,12 +1,12 @@
-import Banner from '@/components/Banner'
+import Banner from "@/components/Banner";
 function MyHome() {
   return (
     <>
-    <div className='bg-black'>
-    <Banner />
-    </div>
+      <div className="bg-black">
+        <Banner />
+      </div>
     </>
-  )
+  );
 }
 
-export default MyHome
+export default MyHome;

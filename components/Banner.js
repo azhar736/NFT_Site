@@ -21,95 +21,105 @@ import { FaFacebookF } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import ReactPlayer from "react-player";
 import Accordian from "./Accordian";
-// import video from "../public/assets/Video/fanpower-anim-loop.mp4"
+// import video from "../public/assets/Video/fanpower-anim-loop.mp4";
+// import video from "./video.mp4";
 function Banner() {
   return (
     <>
-      <div className="bg-[url('../public/assets/bg-top.png')] bg-center h-[450px]">
+      <div className="bg-[url('../public/assets/bg-top.png')] bg-center bg-no-repeat bg-cover h-[450px]">
         <Header />
-        <div className="mt-[130px] mx-4">
-          <Image src={banner} height={369} width={1089} />
+        <div className="mt-[50px] w-full flex justify-center items-center">
+          <Image
+            src={banner}
+            height={369}
+            width={1089}
+            className="h-[200px] sm:h-[230px] md:h-[260px] lg:h-[280px]  w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%] xl:w-[65%]"
+          />
         </div>
       </div>
-      <div className="bg-black border-yellow-400 px-8 py-10">
-        <Image src={Slogan} />
+      <div className="bg-black border-yellow-400 px-8 w-full flex justify-center items-center sm:mt-[40px] md:mt-[50px]">
+        <Image
+          src={Slogan}
+          className="w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%] xl:w-[65%]"
+        />
       </div>
-      <div className="bg-black border-yellow-400 px-8 py-10">
-        <Image src={GetLit} />
+      <div className="bg-black border-yellow-400 px-8 py-10 w-full flex justify-center items-center sm:mt-[40px] md:mt-[50px]">
+        <Image
+          src={GetLit}
+          className="w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%] xl:w-[65%]"
+        />
       </div>
-      <div className="bg-black border-2 border-black px-8 py-3">
-        <p className="text-center text-xl text-white">
+      <div className="bg-black border-2 border-black px-8  w-full flex justify-center items-center sm:mt-[40px] md:mt-[50px]">
+        <p className="text-center text-xl text-white w-[80%] sm:w-[75%] md:w-[70%] lg:w-[65%] xl:w-[60%]">
           PX is the ultimate digital avatar Plateform, connecting you with your
           favorite creaters, teams, and like-minded fans.Collaborate and create
           epic experiences togather.
         </p>
       </div>
-      <div>
-        <Image src={ArtBanner} />
+      <div className="w-full flex justify-center items-center mt-[40px] md:mt-[50px]">
+        <Image
+          src={ArtBanner}
+          className="w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%] xl:w-[65%]"
+        />
       </div>
-      <div className="h-56 flex items-center justify-center flex-col">
-        <h2 className="text-[#802dff] text-[48px] font-bold leading-[44px]">
+      <div className="h-56 flex items-center justify-center flex-col  w-full">
+        <h2 className="text-[#802dff] text-[48px] md:text-[55px] font-bold leading-[44px]  flex items-center justify-center ">
           BE THE
         </h2>
-        <h2 className="text-white text-[48px] font-bold leading-[44px]">
+        <h2 className="text-white text-[42px] md:text-[50px] font-bold leading-[44px]  flex items-center justify-center ">
           ULTIMATE FAN
         </h2>
-        <h2 className="text-[#802dff] text-[48px] font-bold leading-[44px]">
+        <h2 className="text-[#802dff] text-[48px] md:text-[55px] font-bold leading-[44px]  flex items-center justify-center ">
           WITH PX.
         </h2>
       </div>
-      <div className="flex items-center justify-center">
-        <div className="w-[400px]">
-          <Image src={itens} />
-        </div>
+      <div className="flex items-center justify-center w-full">
+        <Image
+          src={itens}
+          className="w-[80%] sm:w-[75%] md:w-[70%] lg:w-[65%] xl:w-[60%]"
+        />
       </div>
-      <div className="h-52 flex items-center justify-center flex-col">
-        <h2 className="text-[#802dff] text-[48px] font-bold leading-[40px]">
+      <div className="h-56 flex items-center justify-center flex-col  w-full">
+        <h2 className="text-[#802dff] text-[48px] md:text-[55px] font-bold leading-[44px]  flex items-center justify-center ">
           SCORE
         </h2>
-        <h2 className="text-[#802dff] text-[48px] font-bold leading-[40px]">
+        <h2 className=" text-[#802dff] text-[42px] md:text-[50px] font-bold leading-[44px]  flex items-center justify-center ">
           BIG WITH
         </h2>
-        <h2 className="text-white text-[48px] font-bold leading-[40px]">
+        <h2 className="text-white text-[48px] md:text-[55px] font-bold leading-[44px]  flex items-center justify-center ">
           PX DROPS <span className="text-[#802dff]">!</span>
         </h2>
       </div>
-      <div className="flex items-center justify-center flex-col py-5 px-10">
-        <p className="text-white text-center text-xl font-bold leading-6">
+      <div className="bg-black border-2 border-black px-8  w-full flex flex-col justify-center items-center sm:mt-[40px] md:mt-[50px]">
+        <p className="text-white text-center text-xl font-bold leading-6 w-[80%] sm:w-[75%] md:w-[70%] lg:w-[65%] xl:w-[60%]">
           Get your hands on some seriously epic gear with PX Drops.
         </p>
-        <p className="text-white text-center text-xl font-light leading-[26px]">
+        <p className="text-white text-center text-xl font-light leading-[26px] w-[80%] sm:w-[75%] md:w-[70%] lg:w-[65%] xl:w-[60%]">
           Each drop has a chance to contain one of the six rarity
           levels:Legendry, Epic,Super Rare,Rare,Uncommon,or Commong. It's like a
           virtual slot machine for you avatar -pull the
         </p>
       </div>
-      <div>
-        <Image src={levels} />
+      <div className="flex justify-center items-center w-full">
+        <Image
+          src={levels}
+          className="w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%] xl:w-[65%]"
+        />
       </div>
-      <div className="bg-[url('../public/assets/bg-photo.jpg')] bg-top h-[450px] flex items-center justify-center flex-col">
-        <h2 className="text-white text-[54px] font-bold leading-[48px]">
-          BOOST
+      <div className="bg-[url('../public/assets/bg-photo.jpg')] bg-top bg-no-repeat bg-cover h-[550px] sm:h-[600px] md:h-[650px] lg:h-[700px] w-full flex flex-col items-center justify-around ">
+        <h2 className="text-white text-[54px] font-bold leading-[48px] flex justify-center items-center w-[80%] sm:w-[75%] md:w-[70%] lg:w-[55%] ">
+          BOOST YOUR FAN <br />
+          POWER WITH PX.
         </h2>
-        <h2 className="text-white text-[54px] font-bold leading-[48px]">
-          YOUR FAN
-        </h2>
-        <h2 className="text-white text-[54px] font-bold leading-[48px]">
-          POWER
-        </h2>
-        <h2 className="text-white text-[54px] font-bold leading-[48px]">
-          WITH PX.
-        </h2>
+
+        {/* video here */}
+
+        {/* <div className="flex justify-center items-center w-full ">
+          <div className="border-2 rounded-lg  w-[70%] sm:w-[50%] md:w-[45%] lg:w-[40%] xl:w-[35%] h-[200px]"></div>
+        </div> */}
       </div>
-      {/* <div className='border-4 border-blue-500 w-[300px]'>
-    <ReactPlayer 
-    width={280}
-    url={video}
-    type='video'
-    />
-  </div> */}
-      <div className="py-5 px-5">
-        <p className="text-white text-center text-2xl font-light leading-7">
+      <div className="bg-black border-2 border-black px-8  w-full flex flex-col justify-center items-center sm:mt-[40px] md:mt-[50px]">
+        <p className="text-white text-center text-2xl font-light leading-7 w-[80%] sm:w-[75%] md:w-[70%] lg:w-[65%] xl:w-[60%]">
           Each PX gives you up to 100% power bonus, making you a force to be
           reckoned with.
           <span className="font-bold">
@@ -118,33 +128,38 @@ function Banner() {
           Get decked out in epic gear and turn heads.
         </p>
       </div>
-      <div className="py-10 flex flex-col items-center justify-center">
-        <div className="px-6">
-          <Image src={LootBox} />
-        </div>
-        <div className="pt-5 px-1 w-full">
-          <h2 className="text-[#802dff] text-center text-[48px] font-bold leading-[48px]">
-            PX REWARDS
-          </h2>
-          <h2 className="text-[#802dff] text-center text-[48px] font-bold leading-[48px]">
-            YOUR PASSION.
-          </h2>
-        </div>
+      <div className="flex justify-center items-center w-full mt-[40px] md:mt-[50px]">
+        <Image
+          src={LootBox}
+          className="w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%] xl:w-[65%]"
+        />
       </div>
-      <div className="py-2 px-5">
-        <p className="text-white text-center text-2xl font-light leading-7">
+      <div className="flex flex-col justify-center items-center w-full mt-[40px] md:mt-[50px]">
+        <h2 className="text-[#802dff] text-center text-[48px] font-bold leading-[48px] w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%] xl:w-[65%]">
+          PX REWARDS
+        </h2>
+        <h2 className="text-[#802dff] text-center text-[48px] w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%] xl:w-[65%] font-bold leading-[48px]">
+          YOUR PASSION.
+        </h2>
+      </div>
+      <div className="flex justify-center items-center w-full mt-[40px] md:mt-[50px]">
+        <p className="text-white text-center text-2xl font-light leading-7 w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%] xl:w-[65%]">
           PX lets you fully embrace and express your fandom, with rewards for
           activities like watching streams, videos, following your favorite
           content creators, and interacting with other fans.
         </p>
       </div>
-      <div className="flex items-center justify-center py-10 my-5">
-        <Image src={IconMedia} />
+      <div className="flex justify-center items-center w-full mt-[40px] md:mt-[50px]">
+        <Image
+          src={IconMedia}
+          className="w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%] xl:w-[65%]"
+        />
       </div>
-      <div className="flex items-center justify-center mb-14">
-        <div className="w-[320px]">
-          <Image src={Reward} />
-        </div>
+      <div className="flex justify-center items-center w-full mt-[40px] md:mt-[50px]">
+        <Image
+          src={Reward}
+          className="w-[90%] sm:w-[80%] md:w-[75%] lg:w-[70%] xl:w-[65%]"
+        />
       </div>
       <div className="bg-[url('../public/assets/dark-concrete-texture-background.jpg')] bg-top h-[450px] flex flex-col text-center pt-10">
         <h2 className="text-white text-[55px] font-bold leading-[58px]">
@@ -166,7 +181,7 @@ function Banner() {
             PX is your ticket to a world of endless possibilities.
           </p>
           <p className="text-white text-center text-xl font-light leading-7">
-            Explor multible metaverses, unlock unique experiences, and score
+            Explore multible metaverses, unlock unique experiences, and score
             tons of rewards and interactions.
           </p>
         </div>
